@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profit or Loss</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Stock Profile & Loss Calculator</h1>
+    <div class="form">
+      <label for="initial-price">Initial Price</label>
+      <input
+        type="number"
+        placeholder="Enter Initial Price Here"
+        id="initial-price"
+      />
+      <label for="quantity">Quantity of Stocks</label>
+      <input
+        type="number"
+        placeholder="Enter the Number of Stocks bought"
+        id="quantity"
+      />
+      <label for="current-price">Current Price</label>
+      <input
+        type="number"
+        placeholder="Enter the Current Price of the stocks"
+        id="current-price"
+      />
+      <button>Tell Me!</button>
+      <div id="msg"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
