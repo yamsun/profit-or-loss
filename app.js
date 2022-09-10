@@ -5,9 +5,9 @@ const btn = document.querySelectorAll("button")[0];
 const msg = document.querySelector("#msg");
 
 btn.addEventListener("click", () => {
-  const initialPrice = initialPriceEl.value;
-  const quantity = quantityEl.value;
-  const currentPrice = currentPriceEl.value;
+  const initialPrice = Number(initialPriceEl.value);
+  const quantity = Number(quantityEl.value);
+  const currentPrice = Number(currentPriceEl.value);
   if (currentPrice > initialPrice) {
     const profit = quantity * (currentPrice - initialPrice);
     const percentageProfit = (profit / initialPrice) * 100;
