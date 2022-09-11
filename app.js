@@ -12,11 +12,14 @@ btn.addEventListener("click", () => {
     const profit = quantity * (currentPrice - initialPrice);
     const percentageProfit = (profit / initialPrice) * 100;
     msg.innerHTML = `Hey, the profit is ${profit} and the percent is ${percentageProfit}%`;
+    document.body.style.backgroundColor = "yellowgreen";
   } else if (initialPrice > currentPrice) {
     const loss = quantity * (initialPrice - currentPrice);
     const percentageLoss = (loss / initialPrice) * 100;
     msg.innerHTML = `Hey, the loss is ${loss} and the percent is ${percentageLoss}%`;
+    document.body.style.backgroundColor = "rgb(243, 158, 158)";
   } else {
     msg.innerHTML = "No Pain No Gain & No Gain No Pain";
+    document.body.style.backgroundColor = "yellow";
   }
 });

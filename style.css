@@ -20,8 +20,10 @@ button{
     align-self: center;
     border-radius: 0.5em;
     color: aliceblue;
-    background-color: slateblue;
+    background-color: tomato;
     font-weight: 500;
+    cursor: pointer;
+    border-style: none;
     
 }
 
@@ -32,6 +34,7 @@ label {
 }
 
 input{
-    border: 2px solid slateblue;
+    border: 2px solid tomato;
     border-radius: 0.5em;
 }
+
